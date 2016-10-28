@@ -7,7 +7,7 @@ var io = require('socket.io')(server);
 
 //host and port
 var host = "localhost";
-var port  	 = 3000;
+var port  	 = process.env.PORT || 3000;
 
 //configure client root directory
 app.use(express.static(__dirname + '/client'));
