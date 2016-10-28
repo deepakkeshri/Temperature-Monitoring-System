@@ -1,5 +1,5 @@
 {
-  "name": "Temperature Monitoring System",
+  "name": "temperaturemonitoringsystem",
   "version": "1.0.0",
   "description": "A system to monitor temperature using a pubsub server, sensor simulator and client",
   "main": "app.js",
