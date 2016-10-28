@@ -11,5 +11,8 @@
     "socket.io"  : "^1.5.0"
   },
   "author": "Deepak kumar",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "4.5.0"
+  }
 }
