@@ -24,7 +24,7 @@
     //home controller
     function HomeCtrl($scope) {
         var self = this;
-        socket = io('http://localhost:3000/client');
+        socket = io('/client');
 
         $scope.units = ["F", "C"];
         $scope.selectedUnit = "F";

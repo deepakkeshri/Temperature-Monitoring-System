@@ -10,7 +10,7 @@
     function SimulatorCtrl($scope, $timeout) {
 
         var self = this;
-        socket = io('http://localhost:3000/simulator');
+        socket = io('/simulator');
 
         $scope.currentTemperature = 0;
         $scope.isConnected = false;
