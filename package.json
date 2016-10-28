@@ -1,0 +1,15 @@
+{
+  "name": "Temperature Monitoring System",
+  "version": "1.0.0",
+  "description": "A system to monitor temperature using a pubsub server, sensor simulator and client",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies" : {
+    "express"    : "~3.4.4",
+    "socket.io"  : "^1.5.0"
+  },
+  "author": "Deepak kumar",
+  "license": "ISC"
+}

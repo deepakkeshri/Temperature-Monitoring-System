@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <h2>Simulator</h2>
+
+        <p>Sensor Reading: {{currentTemperature}}</p>
+        <p>Last updated: {{lastUpdated | date: 'HH:mm:ss'}}</p>
+        <p>Update Automatically <input type="checkbox" ng-model="isAutoUpdate" ng-disabled="!isConnected">  </p>
+
+        <div>
+            Update Interval <input type="number" name="input" ng-model="updateInterval" min="1000" max="10000" required>  (milliseconds)
+        </div><br>
+
+        <div>
+            <button class="btn btn-success" ng-click="updateBtn($event)"  ng-disabled="!isConnected || isAutoUpdate"><span>Update</span></button>
+            <button class="btn btn-primary" ng-disabled="!isServerOnline" ng-click="isConnected ? disConnectBtn($event) : connectBtn($event)"><span>{{isConnected ? 'Disconnect' : 'Connect'}}</span></button>
+        </div>
+
+        <p><span ng-show="!isServerOnline">Server offline</span></p>
+
+    </div>
+</div>

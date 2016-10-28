@@ -1,0 +1,18 @@
+<div class="container" >
+
+    <div class="row">
+
+        <h2>Client</h2>
+
+        <p>Current Temperature: {{currentTemperature}}</p>
+        Unit <select class="dropdown" ng-model="selectedUnit" ng-options="x for x in units">
+        </select>
+        <p>Last updated: {{lastRefreshed | date: 'HH:mm:ss'}}</p>
+        <button class="btn btn-success" ng-disabled="!isConnected" ng-click="refreshBtn($event)"><span>Refresh</span></button>
+        <button class="btn btn-primary" ng-click="isConnected ? disConnectBtn($event) : connectBtn($event)"><span>{{isConnected ? 'Disconnect' : 'Connect'}}</span></button>
+
+        <p><span ng-show="!isServerOnline">Server offline</span></p>
+
+    </div>
+
+</div>

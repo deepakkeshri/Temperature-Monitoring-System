@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="meanApp">
+<head>
+    <title>Temperature Updates</title>
+    <base href="/">
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap-theme.min.css">
+
+</head>
+
+<body ng-cloak>
+
+    <!-- libs -->
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/lib/jquery/jquery-3.1.1.js"></script>
+
+
+    <script src="main.js"></script>
+    <script src="/home/home.controller.js"></script>
+    <script src="/simulator/simulator.controller.js"></script>
+
+    <div ng-view></div>
+
+</body>
+</html>
