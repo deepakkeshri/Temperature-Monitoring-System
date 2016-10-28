@@ -18,7 +18,7 @@ app.use(express.static(__dirname + '/client'));
 require('./app/routes/routes.js')(app,io);
 
 // listen (start app with node app.js)
-server.listen(port, host, function(err) {
+server.listen(port, function(err) {
     if (err != undefined)
         console.log(err);
     console.log(server.address());
